@@ -59,7 +59,7 @@ header {
     margin-right: 30px;
 }
 
-.logo {
+.logoheader {
     margin-right: auto;
 }
 
@@ -334,4 +334,116 @@ button {
 
 .home {
     background-color: #93A5FF;
+}
+
+
+.section4
+{
+    height: 100vh;
+    position: relative;
+    background-color: #F7F8FF;
+}
+
+.logos
+{
+    display: flex;
+}
+
+@media screen and (max-width: 992px) {
+    .logos {
+      flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container1 {
+        flex-direction: column;
+    }
+}
+
+.logo
+{
+    margin: 10px auto;
+    transform: scale(0.5);
+}
+
+#free-trial-btn
+{
+    margin-top: 30px;
+    background-color: #93A5FF;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border-width: 0px;
+    position: absolute;
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.feedbacks
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .feedbacks
+    {
+        flex-direction: column;
+    }
+
+}
+
+.feedback
+{
+    display: flex;
+}
+
+.feedback-text
+{
+    font-style: italic;
+}
+
+.user-feedback
+{
+    font-weight: bold;
+}
+
+.btn-group
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.feedback-nav-btn
+{
+    border: none;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    background-color: rgba(147, 165, 255, 0.38);
+    margin: 5px;
+    margin-top:5px;
+}
+
+.feedback-nav-btn-active
+{
+    border: none;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    background-color: rgba(147, 165, 255, 1);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 5px;
+}
+
+.section5
+{
+    height: 80vh;
+    position: relative;
 }

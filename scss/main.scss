@@ -133,6 +133,7 @@ header {
 
 .section1 {
     height: 100vh;
+    overflow-x: hidden;
 
     .center-title {
         text-align: center;
@@ -143,13 +144,50 @@ header {
     }
 }
 
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
 
 .bloc-text {
-    width: 35%;
+    width: 34%;
+    margin-right: 30px;
 
     .text1 {
         display: flex;
-        padding: 20px;
+        margin-bottom: 50px;
+    }
+    h3 {
+        margin-bottom: 10px;
     }
 }
 
+.bloc-image {
+    position: relative;
+
+    .illustration_section1 {
+        transform: scale(0.8);
+        position: relative;
+        left: 10%;
+    }
+    .dots1 {
+        position: absolute;
+        transform: scale(0.7);
+        right: -10%;
+        top: -3%;
+    }
+    .dots2 {
+        position: absolute;
+        transform: scale(0.7);
+        left: 10%;
+        top: 47%;
+    }
+}
+
+.icons_section1 {
+    transform: scale(0.7);
+    padding-right: 20px;
+    
+}

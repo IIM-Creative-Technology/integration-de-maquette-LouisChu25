@@ -23,7 +23,6 @@ header {
     height: 100vh;
     background-image: url(images/backgroundheader.png);
     background-size: cover;
-    overflow-x: hidden;
 }
 
 .navbar {
@@ -143,8 +142,6 @@ header {
 
 .section1 {
     height: 100vh;
-    overflow-x: hidden;
-
 }
 
 .container1 {
@@ -215,16 +212,7 @@ header {
     
 }
 
-button {
-    background-color: white;
-    color: #93A5FF;
-    padding: 8px 16px;
-    border-radius: 5px;
-    border-width: 0px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    margin-left: auto;
-}
+
 
 .container2 {
     display: flex;
@@ -347,19 +335,21 @@ button {
 .logos
 {
     display: flex;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 992px) {
-    .logos {
-      flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 768px) {
     .container1 {
         flex-direction: column;
     }
+    .container2 {
+        flex-direction: column;
+    }
+    .city {
+        display: none;
+    }
 }
+
 
 .logo
 {
@@ -446,4 +436,79 @@ button {
 {
     height: 80vh;
     position: relative;
+}
+
+footer
+{
+    position: relative;
+    height: 100vh;
+    background-image: url("images/footer_bg.png");
+    background-size: cover;
+}
+
+.link-group
+{
+    position: absolute;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.link-column
+{
+    margin: 50px;
+}
+
+.link-column h4
+{
+    font-weight: bold;
+}
+
+.payment-logos
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.payment-logos img
+{
+    transform: scale(0.7);
+}
+
+.logo-brand
+{
+    color: white;
+    position: absolute;
+    top: 75%;
+    left: 4%;
+}
+
+.social-medias
+{
+    display: flex;
+    position: absolute;
+    top: 75%;
+    right: 4%;
+}
+
+.social-media
+{
+    margin: 3px;
+}
+
+.important-links
+{
+    position: absolute;
+    top: 82%;
+    right: 4%;
+    display: flex;
+}
+
+.important-links a, .important-links span
+{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
 }

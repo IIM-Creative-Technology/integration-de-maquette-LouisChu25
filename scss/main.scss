@@ -1,0 +1,155 @@
+@import 'abstract/variables',
+        'abstract/mixins';
+
+@import 'base/reset',
+        'base/base',
+        'base/commons';
+
+@import 'pages/home';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 852px;
+    background-color: #424D83;
+    overflow-x: hidden;
+}
+
+.navbar {
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    padding: 30px;
+}
+
+.navbar_links {
+    list-style: none;
+
+    li {
+        display: inline-block;
+        padding: 0px 30px;
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: lighter;
+        }
+    }
+}
+
+.log {
+    background-color: white;
+    color: #93A5FF;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border-width: 0px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 30px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.message {
+    color: white;
+    padding: 70px;
+    display: flex;
+    margin-top: 60px;
+
+    h1 {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+.illustration {
+    width: 10%;
+
+}
+
+.forms {
+    display: flex;
+}
+
+#searchbar {
+    background-color: #384170;
+    padding: 11px 30px 11px 10px;
+    border-radius: 4px;
+    color: white;
+    border-width: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-right: 1px;
+}
+
+::placeholder {
+    color: white;
+}
+
+.header_item1 {
+    width: 40%;
+}
+
+.selection {
+    background-color: #384170;
+    padding: 10px 10px;
+    color: white;
+    border-width: 0px;
+    border-radius: 4px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.check {
+    background-color: #93A5FF;
+    color: white;
+    padding: 10px 10px;
+    border-width: 0px;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.city {
+    transform: scale(0.8);
+    margin-top: -140px;
+
+}
+
+.section1 {
+    height: 100vh;
+
+    .center-title {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .center-text {
+        text-align: center;
+    }
+}
+
+
+.bloc-text {
+    width: 35%;
+
+    .text1 {
+        display: flex;
+        padding: 20px;
+    }
+}
+

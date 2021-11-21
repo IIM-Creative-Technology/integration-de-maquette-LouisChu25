@@ -21,7 +21,8 @@ body {
 
 header {
     height: 100vh;
-    background-color: #424D83;
+    background-image: url(images/backgroundheader.png);
+    background-size: cover;
     overflow-x: hidden;
 }
 
@@ -283,6 +284,9 @@ button {
     width: 20%;
     text-align: center;
     padding: 10px;
+    .card:hover + .btn_section3 {
+        display: block;
+    }
 }
 
 .ligne {
@@ -304,9 +308,30 @@ button {
 }
 
 .vertical {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .vertical2 {
     padding-top: 40px;
+}
+
+
+.customise_plan {
+    background-color: #F7F8FF;
+    color: #93A5FF;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border-width: 0px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn_section3 {
+    margin-top: 30px;
+    display: none;
+}
+
+.home {
+    background-color: #93A5FF;
 }
